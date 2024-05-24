@@ -32,16 +32,16 @@ class CreateContractsTable extends Migration
 
             $table->unsignedBigInteger('edificio')->nullable();
 
-            $table->foreign('empleado')
+            $table->foreign('edificio')
                 ->references('id')
-                ->on('employees')
+                ->on('edificios')
                 ->onDelete('cascade');
 
-            $table->unsignedBigInteger('areas comunes')->nullable();
+            $table->unsignedBigInteger('area_comun')->nullable();
 
-            $table->foreign('empleado')
+            $table->foreign('area_comun')
                 ->references('id')
-                ->on('employees')
+                ->on('common_areas')
                 ->onDelete('cascade');
 
             $table->timestamps();
