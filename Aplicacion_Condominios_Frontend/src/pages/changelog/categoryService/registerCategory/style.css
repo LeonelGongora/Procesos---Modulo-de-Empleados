@@ -1,0 +1,24 @@
+#form-field {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  p {
+    margin: 2px;
+  }
+  input {
+    width: 449px;
+    height: 39px;
+  }
+  button {
+    width: 143px;
+    height: 39px;
+    background-color: #233044;
+    color: white;
+    font-size: 18px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #233044b6;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.background-image{
+    position: fixed;
+    top: 0;
+    left: 295px;
+    width: 85%;
+    height: 100%;
+    background-image: url('../../assets/images/backgroundImage.png'); 
+    background-size: cover;
+    filter: brightness(0.6); 
+}
+.contenedor{
+    position: relative;
+    z-index: 1;
+}

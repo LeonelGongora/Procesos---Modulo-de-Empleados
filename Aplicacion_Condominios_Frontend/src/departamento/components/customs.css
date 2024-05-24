@@ -1,0 +1,229 @@
+body {
+	font-family: Arial, Roboto, Open Sans, Helvetica, sans-serif !important; 
+	font-size: 1rem !important;
+	font-weight: normal !important;
+}
+::-webkit-input-placeholder {
+	font-size: 0.9rem;
+}
+
+::-moz-placeholder {
+	font-size: 0.9rem;
+}
+
+:-ms-input-placeholder {
+	font-size: 0.9rem;
+}
+
+:-moz-placeholder {
+	font-size: 0.9rem;
+}
+
+
+.titulosForms{
+	font-size: 2rem;
+	font-weight: bold;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	list-style-type: none;
+}
+.custom-button {
+	background-color: rgb(25, 118, 162);
+	border-color: rgb(25, 118, 162);
+	font-size: 1rem;
+	font-weight: bold;
+}
+.custom-button:hover {
+	background-color: rgb(11, 79, 110);
+	border-color: rgb(22, 101, 138);
+}
+.custom-buttonVisita {
+	background-color: rgb(25, 118, 162);
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.custom-buttonVisita:hover {
+	background-color: rgb(11, 79, 110);
+}
+
+.iconVisita {
+	color: rgb(25, 118, 162);
+	font-size: 1.6rem;
+}
+
+.iconVisita:hover {
+	color: rgb(11, 79, 110);
+}
+.iconVisita:active {
+	color: rgb(22, 101, 138);
+}
+.custom-form {
+	background-color: #FFFEF6;
+	border: none;
+	border-radius: 12px;
+	padding: 40px;
+	box-shadow: 2px 2px 5px rgba(73, 73, 73, 0.3);
+	min-width: 500px;
+	min-height: 500px;
+	width: 60vw;
+}
+@media (max-width: 2560px) {
+	.custom-form {
+		width: 45vw;
+	}
+}
+@media (max-width: 1920px) {
+	.custom-form {
+		width: 50vw;
+	}
+}
+@media (max-width: 1366px) {
+	.custom-form {
+		width: 60vw;
+	}
+}
+/* Para pantallas con una resolución de 480px o menos */
+@media (max-width: 1280px) {
+	.custom-form {
+		width: 65vw;
+	}
+}
+
+.label-custom{
+	font-weight: bold !important;
+	margin-bottom: 0 !important;
+	font-size: 0.8rem !important;
+}
+
+.modalTitle .modal-title{
+	font-size: 1.3rem !important;
+	font-weight: bold !important;
+	text-align: center;
+	width: 100%;
+
+}
+.autoExpand {
+  resize: none;
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+.bottom-button {
+	margin-top: auto;
+}
+
+.iconContr{
+	color: rgba(45, 96, 115, 1);
+	font-size: 1.4rem;
+}
+.iconContr:hover{
+	color: rgb(32, 75, 90);
+}
+.iconContr:active{
+	color: rgb(83, 116, 128);
+}
+.botoncardContr {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(45, 96, 115, 1);
+}
+.botoncardContr:hover {
+	background-color: transparent;
+}
+.botoncardContr:active {
+	background-color: transparent !important;
+}
+
+.customCard {
+	background-color: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	margin: 15px;
+	padding: 5px;
+}
+
+.customInput:focus, .customInput:active{
+	border: 2px solid rgba(45, 96, 115, 1);
+	box-shadow: none;
+}
+.customInput.form-select {
+	font-size: 0.9rem;
+}
+input[type="date"].customInput{
+	font-size: 0.9rem;
+}
+.customImage.form-control{
+	font-size: 0.9rem;
+}
+.customImage.form-control:focus, .customImage.form-control:active{
+	box-shadow: none;
+	border: 2px solid rgba(45, 96, 115, 1);
+}
+.roundedImage {
+	border-radius: 20px;
+}
+.customCheckbox.form-check-input {
+	font-size: 1rem;
+	margin-top: 0;
+	border: 1px solid rgb(63, 63, 63);
+	margin-left: 6px;
+	box-shadow: none;
+}
+.cardImgResidente{
+	width: 100%;
+	height: 14em;
+	object-fit: cover;
+}
+.labelResidente.form-label{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.labelResidenteDep.form-label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.labelResidenteTel.form-label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
+.cardRes{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardlistaResidente{
+	height: 4em;
+	width: 4em;
+	object-fit: fill;
+	margin: 6px;
+	border-radius: 5px ;
+}
+.visitasTabla{
+	font-size: 0.95rem;
+}
+td.celdaVisita{
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+

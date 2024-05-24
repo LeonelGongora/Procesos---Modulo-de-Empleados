@@ -1,0 +1,65 @@
+.entradaBuscador-admin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    height: 4.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: 2px solid rgb(201, 201, 201);
+}
+
+.entradaBuscador-admin:hover {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.397);
+    border: 2px solid rgb(145, 145, 145);
+}
+
+.filtrarElementos-admin {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2vh;
+
+}
+
+#buscador-admin {
+    /* border-radius: 10px;
+    width: 50%;
+    height: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw; */
+    height: 100%;
+    width: 100%;
+    outline: none;
+
+}
+
+.capsulaDesplegable-admin {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 30%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(201, 201, 201);
+}
+
+.capsulaDesplegable-admin:hover {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.397);
+    border: 2px solid rgb(145, 145, 145);
+}
+
+#desplegable-admin {
+    outline: none;
+    width: 97%;
+}
+
+.filtro {
+    display: none;
+}

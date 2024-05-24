@@ -1,0 +1,75 @@
+{
+  "name": "react-sidebar-with-dropdown",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "dayjs": "^1.11.11",
+    "jspdf": "^2.5.1",
+    "mdb-react-ui-kit": "^7.2.0",
+    "qrcode": "^1.5.3",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.12.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
+    "react-pdf": "^8.0.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
+    "react-to-print": "^2.15.1",
+    "react-toastify": "^10.0.5",
+    "reactstrap": "^9.2.2",
+    "sonner": "^1.4.41",
+    "sweetalert2": "^11.10.8",
+    "typescript": "^4.4.2",
+    "universal-cookie": "^7.1.4",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/date-arithmetic": "^4.1.4",
+    "@types/react": "^18.3.1",
+    "@types/react-big-calendar": "^1.8.9",
+    "@types/react-dom": "^18.3.0"
+  }
+}

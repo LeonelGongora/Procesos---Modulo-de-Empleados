@@ -1,0 +1,105 @@
+.residentesRegistrados {
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.residente-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    cursor: pointer;
+    background-color: rgb(238, 234, 255);
+    box-shadow: ();
+}
+.residente-item:hover {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+    box-shadow: ();
+}
+.cardLista{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding:0;
+    margin: 0;
+}
+  
+.boton-modal {
+    background-color: rgba(45, 96, 115, 1); 
+    border-color: rgba(45, 96, 115, 1);
+}
+.boton-modal:hover {
+    background-color: rgb(32, 63, 75); 
+    border-color: rgb(32, 63, 75);
+}
+.boton-cerrar {
+    background-color: rgba(0, 0, 0, 1); 
+    border-color: rgba(0, 0, 0, 1);
+}
+.boton-cerrar:hover {
+    background-color: rgba(0, 0, 0, 1); 
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.modal-header {
+    text-align: center;
+    border: none;
+}
+.modal-footer {
+    border-top: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+  
+.checkbox-input {
+    display: none;
+}
+  
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(45, 96, 115, 1); 
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+  
+.checkbox-input:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(45, 96, 115, 1); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    padding-left: 10px;
+}
+  
+.search-input {
+    width: calc(100% - 32px);
+    padding-right: 32px; 
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+.search-input:focus {
+    outline: none; 
+}  

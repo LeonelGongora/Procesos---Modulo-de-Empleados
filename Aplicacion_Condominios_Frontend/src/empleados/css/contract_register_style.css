@@ -1,0 +1,11 @@
+.advertencia-creEve{
+    display: block;
+    font-size: 0.75rem;
+    margin-left: 0;
+    margin-right: 4vw;
+    margin-top: 4px;
+    text-align: start;
+    color: red;
+    width: 100%;
+}
+

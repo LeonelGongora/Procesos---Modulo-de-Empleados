@@ -1,0 +1,101 @@
+.contenedor{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.info-departamento {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 14vh;
+    max-height: 59vh; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+  
+.imgInfo-departamento {
+    width: 50%;
+}
+.imgInfo-departamento img {
+    width: 100%;
+    height: 100%;
+}
+  
+.infoText-departamento {
+    width: 50%;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+.infoText-departamento::-webkit-scrollbar {
+    display: none; 
+}
+#text-infDep{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+#titulo-infDep{
+    font-size: 1.6rem;
+    margin-bottom: 2.8rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+#text-subtit{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.contenedorContratoinf{
+    width: 100%;
+    margin: 15px 0;
+    min-height: 15.5vh;
+    max-height: 28.5vh;
+    border-radius: 0rem;
+    background-color: #e4e4e4;
+    padding: 1vh 1.5vh;
+    overflow-y: scroll;
+    border: none;
+}
+.contratoinf{
+    background-color: #e4e4e4;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 3px;
+}
+#tupla{
+    display: flex; 
+}
+#tupla h2 {
+    width: 50%; 
+}
+.contenedorResidenteinf{
+    width: 100%;
+    margin: 15px 0;
+    min-height: 10.7vh;
+    max-height: 10.7vh;
+    border-radius: 0rem;
+    background-color: #e4e4e4;
+    padding: 1vh 1.5vh;
+    overflow-y: scroll;
+    border: none;
+}
+.contratoinfR{
+    background-color: #ffffff;
+    padding-block: 10px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    border-radius: 0%;
+}
+.selectContrato{
+    padding-top: 0.4rem;
+    transition: background-color 0.3s;
+}
+.selectContrato:hover {
+    background-color: #bbbbbb;
+    cursor: pointer;
+}
+.linkContrato{
+    text-decoration: none; 
+    color: inherit; 
+}

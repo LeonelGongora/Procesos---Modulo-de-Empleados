@@ -1,0 +1,40 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  /* border: solid 2px #233044; */
+  border-radius: 11px;
+  padding: 2em;
+  gap: 2em;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.d-flex{
+  display: flex;
+}
+.j-center{
+  justify-content: center;
+}
+.a-center{
+  align-items: center;
+}
+.block {
+  width: 143px;
+  height: 39px;
+  background-color: #2A98CC;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #16658A;
+  }
+}
+
+.c-dark-blue{
+  color: #233044;
+}
+.d-column{
+  flex-direction: column;
+}
