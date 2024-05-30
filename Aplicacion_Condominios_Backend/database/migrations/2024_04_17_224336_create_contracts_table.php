@@ -40,7 +40,7 @@ class CreateContractsTable extends Migration
             $table->unsignedBigInteger('area_comun')->nullable();
 
             $table->foreign('area_comun')
-                ->references('id')
+                ->references('id_common_area')
                 ->on('common_areas')
                 ->onDelete('cascade');
 
