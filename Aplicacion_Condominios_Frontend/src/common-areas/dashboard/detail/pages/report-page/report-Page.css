@@ -44,7 +44,7 @@
   resize: vertical;
 }
 
-button {
+/* button {
   width: 100%;
   padding: 10px;
   background-color: #1976a2;
@@ -58,4 +58,4 @@ button {
 
 button:hover {
   opacity: 0.9;
-}
+} */
