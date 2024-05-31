@@ -27,7 +27,7 @@ function ControlFaltas() {
 
   const getEmpleados = async () => {
 
-    const respuesta = await axios.get(`http://192.168.0.100:8000/api/obtener_ausencias`);
+    const respuesta = await axios.get(`http://127.0.0.1:8000/api/obtener_ausencias`);
 
     console.log(respuesta.data.ausencias);
 

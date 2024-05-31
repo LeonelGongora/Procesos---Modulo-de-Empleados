@@ -75,7 +75,7 @@ function MarcarHora() {
       
         data.append("correo", values.correo);
         data.append("ci", values.ci);
-        const res = await axios.post(`http://192.168.0.100:8000/api/marcar_hora_empleado`, data);
+        const res = await axios.post(`http://127.0.0.1:8000/api/marcar_hora_empleado`, data);
         let mensajeRecibido = res.data.mensaje;
         console.log(mensajeRecibido);
         if(mensajeRecibido === 'Ingreso realizado'){
