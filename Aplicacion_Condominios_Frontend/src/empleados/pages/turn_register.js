@@ -192,7 +192,7 @@ function TurnRegister() {
               data.append("hora_salida", horarios[dias[i]].hora2);
               data.append("empleado", empleado.id);
               const respuesta_horario = await axios.post(
-                `http://127.0.0.1:8000/api/add_working_hour`,
+                `http://192.168.0.100:8000/api/add_working_hour`,
                 data
               );
               if(respuesta_horario.data.status === 200){

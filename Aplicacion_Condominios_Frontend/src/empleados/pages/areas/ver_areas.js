@@ -66,7 +66,7 @@ function VerAreas() {
 
 
         const res = await axios.post(
-            `http://127.0.0.1:8000/api/add_area`,
+            `http://192.168.0.100:8000/api/add_area`,
         data
         );
 
@@ -78,7 +78,7 @@ function VerAreas() {
                 data_cargo.append("area", res.data.ultima_area);
                 
 
-                const respuesta = await axios.post(`http://127.0.0.1:8000/api/add_position`, data_cargo);
+                const respuesta = await axios.post(`http://192.168.0.100:8000/api/add_position`, data_cargo);
             }
 
             window.location.reload();
@@ -88,7 +88,7 @@ function VerAreas() {
   };
 
   const obtenerAreas = async ()  => {
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_areas`);
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_all_areas`);
     setAreas(respuesta.data.areas)
     console.log(respuesta.data.areas)
   };

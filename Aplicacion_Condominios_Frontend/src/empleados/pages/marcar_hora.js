@@ -75,7 +75,7 @@ function MarcarHora() {
       
         data.append("correo", values.correo);
         data.append("ci", values.ci);
-        const res = await axios.post(`http://127.0.0.1:8000/api/marcar_hora_empleado`, data);
+        const res = await axios.post(`http://192.168.0.100:8000/api/marcar_hora_empleado`, data);
         let mensajeRecibido = res.data.mensaje;
         console.log(mensajeRecibido);
         if(mensajeRecibido === 'Ingreso realizado'){
@@ -87,7 +87,7 @@ function MarcarHora() {
           Swal.fire('Se marcó la hora de salida correctamente', 'Hora actual: ' + horaActual, 'success');
         }
         if(mensajeRecibido === 'No existe el usuario'){
-          Swal.fire('El carnet es incorrecto vuelva a intentarlo','','error');
+          Swal.fire('El carnet es incorrecto o el usuario no existe vuelva a intentarlo','','error');
         }
         if(mensajeRecibido === 'Ya marco entrada y salida'){
             Swal.fire('Usted ya marco su salida y entrada de hoy','','error');

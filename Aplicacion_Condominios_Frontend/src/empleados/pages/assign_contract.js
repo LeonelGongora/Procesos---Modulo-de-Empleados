@@ -22,14 +22,15 @@ function AssignContract() {
 
   const getEmpleados = async () => {
 
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_employees`);
-    setEmpleados(respuesta.data.empleados)
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_all_employees`);
+    setEmpleados(respuesta.data.empleados);
+    console.log(respuesta.data.empleados);
   }
 
   const eliminarEmpleado = (id) => {
     console.log(id);
 
-    const url = `http://127.0.0.1:8000/api/delete_employee/${id}`; 
+    const url = `http://192.168.0.100:8000/api/delete_employee/${id}`; 
       axios.delete(url).then(respuesta => {
         if(respuesta.data.status === 200){
           console.log(respuesta);
