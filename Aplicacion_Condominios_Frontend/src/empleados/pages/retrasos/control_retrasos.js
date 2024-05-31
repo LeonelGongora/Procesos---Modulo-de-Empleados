@@ -29,7 +29,7 @@ function ControlRetrasos() {
 
   const getEmpleados = async () => {
 
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/obtener_atrasos`); //Aqui obtener los empleados con al menos un retraso
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/obtener_atrasos`); //Aqui obtener los empleados con al menos un retraso
     console.log(respuesta.data.atrasos);
 
     let empleadosConAtrasos = [];
@@ -217,7 +217,7 @@ function ControlRetrasos() {
   }
 
   const obtenerAreas = async ()  => {
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_areas`);
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_all_areas`);
     setAreas(respuesta.data.areas)
   };
 

@@ -26,7 +26,7 @@ function AssignTurn() {
 
   const getEmpleados = async () => {
 
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_employee_with_contract`);
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_employee_with_contract`);
 
     console.log(respuesta.data.empleados)
 
@@ -203,7 +203,7 @@ function AssignTurn() {
   }
 
   const obtenerAreas = async ()  => {
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_areas`);
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_all_areas`);
     setAreas(respuesta.data.areas)
   };
 

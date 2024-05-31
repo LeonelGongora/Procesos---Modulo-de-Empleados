@@ -45,7 +45,7 @@ function EmployeeEdit() {
   }, []);
 
   const getEmpleado =  async (e) => {
-    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_employee/${id}`)
+    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_employee/${id}`)
     setValues({
         nombre: respuesta.data.empleado.nombre,
         apellido : respuesta.data.empleado.apellido,
@@ -93,7 +93,7 @@ function EmployeeEdit() {
       data.append("genero", "M");
 
       const res = await axios.post(
-        `http://127.0.0.1:8000/api/update_employee/${id}`,
+        `http://192.168.0.100:8000/api/update_employee/${id}`,
         data
       );
 
