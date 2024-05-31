@@ -23,7 +23,8 @@ function AssignContract() {
   const getEmpleados = async () => {
 
     const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_employees`);
-    setEmpleados(respuesta.data.empleados)
+    setEmpleados(respuesta.data.empleados);
+    console.log(respuesta.data.empleados);
   }
 
   const eliminarEmpleado = (id) => {

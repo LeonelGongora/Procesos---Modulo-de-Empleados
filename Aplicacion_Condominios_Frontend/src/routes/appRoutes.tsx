@@ -519,6 +519,15 @@ const appRoutes: RouteType[] = [
       },
 
       {
+        path: "/employees/control_faltas",
+        element: <ControlFaltas />,
+        state: "employee.analytics",
+        sidebarProps: {
+          displayText: "Control de faltas",
+        },
+      },
+
+      {
         path: "/employees/ver_areas",
         element: <VerAreas />,
         state: "employee.analytics",

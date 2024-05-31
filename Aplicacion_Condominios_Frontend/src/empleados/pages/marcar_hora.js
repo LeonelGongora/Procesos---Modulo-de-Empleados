@@ -87,7 +87,7 @@ function MarcarHora() {
           Swal.fire('Se marcó la hora de salida correctamente', 'Hora actual: ' + horaActual, 'success');
         }
         if(mensajeRecibido === 'No existe el usuario'){
-          Swal.fire('El carnet es incorrecto vuelva a intentarlo','','error');
+          Swal.fire('El carnet es incorrecto o el usuario no existe vuelva a intentarlo','','error');
         }
         if(mensajeRecibido === 'Ya marco entrada y salida'){
             Swal.fire('Usted ya marco su salida y entrada de hoy','','error');

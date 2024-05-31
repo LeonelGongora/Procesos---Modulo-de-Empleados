@@ -19,6 +19,7 @@ use App\Http\Controllers\Empleados\AreaController;
 use App\Http\Controllers\Empleados\BenefitController;
 use App\Http\Controllers\Empleados\PositionController;
 use App\Http\Controllers\Empleados\AtrasoController;
+use App\Http\Controllers\Empleados\AusenciaController;
 
 use App\Http\Controllers\Mantenimiento\CategoriaServicioController;
 use App\Http\Controllers\Notificaciones\PersonaController;
@@ -161,6 +162,8 @@ Route::post('marcar_hora_empleado',[EmployeeController::class, 'marcarHora']);
 Route::get('/obtener_atrasos',[AtrasoController::class, 'obtenerAtrasos']);
 Route::post('/actualizar_motivo/{id}',[AtrasoController::class, 'actualizarMotivo']);
 
+Route::post('/actualizar_motivo_ausencia/{id}',[AusenciaController::class, 'actualizarMotivoAusencia']);
+
 Route::post('/add_area', [AreaController::class, 'store']);
 Route::get('/get_all_areas', [AreaController::class, 'getAll']);
 
@@ -169,6 +172,8 @@ Route::get('/get_all_benefits', [BenefitController::class, 'getAll']);
 
 Route::post('/add_position', [PositionController::class, 'store']);
 Route::get('/get_all_positions', [PositionController::class, 'getAll']);
+
+Route::get('obtener_ausencias',[AusenciaController::class,'obtenerAusencias']);
 
 
 
