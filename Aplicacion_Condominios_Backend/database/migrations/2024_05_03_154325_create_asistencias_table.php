@@ -24,17 +24,8 @@ class CreateAsistenciasTable extends Migration
 
             $table->foreign('id_empleado')->references('id')->on('employees')->onDelete('cascade');
         });
-        // Crear el trigger para establecer el valor predeterminado de 'fecha'
-        DB::unprepared('
-            CREATE TRIGGER set_fecha_default
-            BEFORE INSERT ON asistencias
-            FOR EACH ROW
-            BEGIN
-                IF NEW.fecha IS NULL THEN
-                    SET NEW.fecha = CURDATE();
-                END IF;
-            END
-        ');
+
+        DB::statement('ALTER TABLE asistencias MODIFY fecha DATE DEFAULT (CURRENT_DATE)');
     }
 
     /**

@@ -25,17 +25,8 @@ class CreateAtrasosTable extends Migration
 
             $table->foreign('id_empleado')->references('id')->on('employees')->onDelete('cascade');
         });
-        // Crear el trigger para establecer el valor predeterminado de 'fecha'
-        DB::unprepared('
-            CREATE TRIGGER set_fecha_default_atrasos
-            BEFORE INSERT ON atrasos
-            FOR EACH ROW
-            BEGIN
-                IF NEW.fecha IS NULL THEN
-                    SET NEW.fecha = CURDATE();
-                END IF;
-            END
-        ');
+        DB::statement('ALTER TABLE atrasos MODIFY fecha DATE DEFAULT (CURRENT_DATE)');
+
     }
 
     /**

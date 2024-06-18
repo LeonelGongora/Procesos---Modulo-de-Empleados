@@ -20,6 +20,8 @@ use App\Http\Controllers\Empleados\BenefitController;
 use App\Http\Controllers\Empleados\PositionController;
 use App\Http\Controllers\Empleados\AtrasoController;
 use App\Http\Controllers\Empleados\AusenciaController;
+use App\Http\Controllers\Empleados\AsistenciaController;
+
 
 use App\Http\Controllers\Mantenimiento\CategoriaServicioController;
 use App\Http\Controllers\Notificaciones\PersonaController;
@@ -174,7 +176,7 @@ Route::post('/add_position', [PositionController::class, 'store']);
 Route::get('/get_all_positions', [PositionController::class, 'getAll']);
 
 Route::get('obtener_ausencias',[AusenciaController::class,'obtenerAusencias']);
-
+Route::get('obtener_asistencias',[AsistenciaController::class,'obtenerAsistencias']);
 
 
 // MANTENIMIENTO

@@ -9,6 +9,8 @@ use App\Models\Empleados\Employee;
 use App\Models\Empleados\WorkingHour;
 use App\Models\Empleados\Ausencia;
 use App\Models\Empleados\Asistencia;
+use App\Models\Empleados\Contract;
+
 
 
 class AusenciaController extends Controller{
@@ -66,15 +68,24 @@ class AusenciaController extends Controller{
             $ausenciaGuardada = Ausencia::where('id_empleado',$idEmpleado)
                                           ->where('fecha',$fechaanteriorFormateada)
                                           ->first();
-                                        
-            if($diaLaboralEmpleado && $asistencia === null && $ausenciaGuardada === null){
-                $ausencia = new Ausencia();
-                $ausencia -> id_empleado = $idEmpleado;
-                $ausencia -> fecha =  $fechaanteriorFormateada;
-                $ausencia -> save();
+            
+            $inicioContratoEmpleado = Contract::where('empleado',$idEmpleado)
+                                                ->orderBy('fecha_inicio', 'desc')
+                                                ->first();
+            if ($inicioContratoEmpleado) {
+               $fechaContrato = $inicioContratoEmpleado->fecha_inicio;
+               if (strtotime($fechaanteriorFormateada) >= strtotime($fechaContrato)  ) {
+                if($diaLaboralEmpleado && $asistencia === null && $ausenciaGuardada === null){
+                    $ausencia = new Ausencia();
+                    $ausencia -> id_empleado = $idEmpleado;
+                    $ausencia -> fecha =  $fechaanteriorFormateada;
+                    $ausencia -> save();
+                }
+    
+                $correcto = true;
+               }
             }
 
-            $correcto = true;
 
         }
 
