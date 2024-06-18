@@ -44,6 +44,7 @@ import InformacionRetraso from "../empleados/pages/retrasos/informacion_retraso"
 import EditarTurno from "../empleados/pages/turnos/editar_turno";
 import VerAreas from "../empleados/pages/areas/ver_areas";
 import VerBeneficios from "../empleados/pages/beneficios/ver_beneficios";
+import ListarAsistencias from "../empleados/pages/asistencias";
 
 import CommonAreasLayout from "../common-areas/CommonAreasLayout";
 import CreatePage from "../common-areas/dashboard/common-area/pages/create-page/CreatePage";
@@ -506,6 +507,15 @@ const appRoutes: RouteType[] = [
         state: "employee.analytics",
         sidebarProps: {
           displayText: "Marcar Hora",
+        },
+      },
+
+      {
+        path: "/employees/asistencias",
+        element: <ListarAsistencias />,
+        state: "employee.analytics",
+        sidebarProps: {
+          displayText: "Lista de asistencia",
         },
       },
 

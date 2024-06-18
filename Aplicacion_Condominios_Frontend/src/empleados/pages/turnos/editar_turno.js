@@ -208,7 +208,7 @@ function EditarTurno() {
       setErrors(validationErrors);
 
       if (Object.keys(validationErrors).length === 0) {
-        const url = `http://192.168.0.100:8000/api/borrar_horarios_dado_empleado/${empleado.id}`;
+        const url = `http://127.0.0.1:8000/api/borrar_horarios_dado_empleado/${empleado.id}`;
         axios.delete(url).then(async (respuesta) => {
           if (respuesta.data.status === 200) {
             for (let i = 0; i < dias.length; i++) {
@@ -219,7 +219,7 @@ function EditarTurno() {
                 data.append("hora_salida", horarios[dias[i]].hora2);
                 data.append("empleado", empleado.id);
                 const respuesta_horario = await axios.post(
-                  `http://192.168.0.100:8000/api/add_working_hour`,
+                  `http://127.0.0.1:8000/api/add_working_hour`,
                   data
                 );
                 if (respuesta_horario.data.status === 200) {

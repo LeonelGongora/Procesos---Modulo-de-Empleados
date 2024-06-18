@@ -109,7 +109,7 @@ function ContractRegister() {
       data.append("empleado", empleado.id);
 
       const res = await axios.post(
-        `http://192.168.0.100:8000/api/add_contract`,
+        `http://127.0.0.1:8000/api/add_contract`,
         data
       );
 
@@ -118,7 +118,7 @@ function ContractRegister() {
         data_contrato.append("estado_contrato", "Contratado");
         console.log(res);
         const respuesta_estado = await axios.post(
-          `http://192.168.0.100:8000/api/updateContractStatus/${empleado.id}`,
+          `http://127.0.0.1:8000/api/updateContractStatus/${empleado.id}`,
           data_contrato
         );
         if (respuesta_estado.data.status === 200) {
@@ -145,14 +145,14 @@ function ContractRegister() {
 
   const obtenerAreas = async () => {
     const respuesta = await axios.get(
-      `http://192.168.0.100:8000/api/get_all_areas`
+      `http://127.0.0.1:8000/api/get_all_areas`
     );
     setAreas(respuesta.data.areas);
   };
 
   const obtenerBeneficios = async () => {
     const respuesta = await axios.get(
-      `http://192.168.0.100:8000/api/get_all_benefits`
+      `http://127.0.0.1:8000/api/get_all_benefits`
     );
     setBeneficiosSelect(respuesta.data.beneficios);
     //setBeneficios(respuesta.data.beneficios);

@@ -44,7 +44,7 @@ function InformacionFalta() {
           data.append("motivo", motivo);
 
           const res = await axios.post(
-            `http://192.168.0.100:8000/api/actualizar_motivo_ausencia/${empleado.id_ausencia}`,
+            `http://127.0.0.1:8000/api/actualizar_motivo_ausencia/${empleado.id_ausencia}`,
             data
           );
     
@@ -216,7 +216,7 @@ function InformacionFalta() {
                       <h4 className="mb-3">Motivo de la falta</h4>
                       <div className="d-flex flex-start w-100">
                             
-                            <MDBTextArea onChange={cambiarMotivoAusencia} id='textAreaExample' rows={4} style={{ backgroundColor: '#fff' }} wrapperClass="w-100" />
+                            <MDBTextArea onChange={cambiarMotivoAusencia} id='textAreaExample' rows={4} style={{ backgroundColor: '#fff' }} wrapperClass="w-100" value={motivo}/>
                           </div>
                     </MDBCol>
                   </MDBRow>

@@ -31,7 +31,7 @@ function VerBeneficios() {
   }, []);
 
   const obtenerBeneficios = async ()  => {
-    const respuesta = await axios.get(`http://192.168.0.100:8000/api/get_all_benefits`);
+    const respuesta = await axios.get(`http://127.0.0.1:8000/api/get_all_benefits`);
     setBeneficios(respuesta.data.beneficios)
   };
 
@@ -72,7 +72,7 @@ function VerBeneficios() {
 
     
     const res = await axios.post(
-        `http://192.168.0.100:8000/api/add_benefit`,
+        `http://127.0.0.1:8000/api/add_benefit`,
         data
     );
     window.location.reload();
